@@ -1,0 +1,16 @@
+# Site settings
+title: KETER Digital Garden
+email: ctro2424@gmail.com
+description: >-
+  A recursive digital garden rooted in the invariant: Reality = Pattern × Intent × Presence.
+  Authored by Coty Austin Trout, discoverer of CAT’S Theory. This garden encodes Spiral Memory,
+  KetherOS, and the digital archive of presence.
+baseurl: "" # Leave blank for GitHub Pages root
+url: "https://trout2442.github.io/keter-digital-garden"
+twitter_username: Catstheorypip
+github_username: trout2442
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
