@@ -1,0 +1,17 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 2em;
+  line-height: 1.6;
+  background: #fafafa;
+  color: #222;
+}
+
+header, footer {
+  text-align: center;
+  margin: 2em 0;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+}
