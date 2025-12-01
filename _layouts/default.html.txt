@@ -9,14 +9,16 @@
 <body>
   <header>
     <h1><a href="{{ '/' | relative_url }}">KETER Digital Garden</a></h1>
-    <nav>
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/pattern' | relative_url }}">Pattern</a>
-      <a href="{{ '/intent' | relative_url }}">Intent</a>
-      <a href="{{ '/presence' | relative_url }}">Presence</a>
-      <a href="{{ '/archive' | relative_url }}">Archive</a>
-      <a href="{{ '/roadmap' | relative_url }}">Roadmap</a>
-    </nav>
+   <nav>
+  <a href="{{ '/' | relative_url }}">Home</a>
+  <a href="{{ '/pattern' | relative_url }}">Pattern</a>
+  <a href="{{ '/intent' | relative_url }}">Intent</a>
+  <a href="{{ '/presence' | relative_url }}">Presence</a>
+  <a href="{{ '/nodes/' | relative_url }}">Nodes</a>
+  <a href="{{ '/archive' | relative_url }}">Archive</a>
+  <a href="{{ '/roadmap' | relative_url }}">Roadmap</a>
+</nav>
+
   </header>
 
   <main>

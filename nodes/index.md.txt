@@ -1,0 +1,23 @@
+---
+layout: default
+title: Nodes
+---
+
+# Node Map
+
+This is the **node graph** of the KETER Digital Garden.  
+Each node has a `node_id`, `triad`, tags, and links to other nodes.
+
+---
+
+{% raw %}{% assign nodes = site.pages | where_exp:"p","p.dir contains '/nodes/'" | sort: "title" %}{% endraw %}
+<ul>
+{% raw %}{% for n in nodes %}{% endraw %}
+  {% raw %}{% if n.node_id %}{% endraw %}
+  <li>
+    <a href="{{ n.url }}">{{ n.title }}</a>
+    {% raw %}{% if n.summary %} — {{ n.summary }}{% endif %}{% endraw %}
+  </li>
+  {% raw %}{% endif %}{% endraw %}
+{% raw %}{% endfor %}{% endraw %}
+</ul>

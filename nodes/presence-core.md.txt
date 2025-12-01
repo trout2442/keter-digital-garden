@@ -1,0 +1,26 @@
+---
+layout: node
+title: Presence Core
+node_id: node-presence-core
+triad: Presence
+tags: [now, execution, collapse]
+summary: "Presence as the collapse of Pattern × Intent into real execution."
+links_to:
+  - node-pattern-core
+  - node-intent-core
+---
+
+## Presence Core
+
+Presence is **execution** — the collapse of Pattern × Intent into *now*.
+
+Use this node for:
+
+- Logs of what is currently being done
+- Links to live experiments and builds
+- Reflections on how invariant logic shows up in time
+
+See also:
+
+- [Pattern Core](/nodes/pattern-core)
+- [Intent Core](/nodes/intent-core)

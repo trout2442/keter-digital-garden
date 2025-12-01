@@ -1,0 +1,27 @@
+---
+layout: node
+title: Intent Core
+node_id: node-intent-core
+triad: Intent
+tags: [telos, ethics, gradient]
+summary: "Defines Intent as the directional, optimizing gradient of reality."
+links_to:
+  - node-pattern-core
+  - node-presence-core
+---
+
+## Intent Core
+
+Intent is the *direction* or optimization gradient.  
+It answers: **toward what is the system moving?**
+
+Use this node for:
+
+- Ethics, goals, alignment
+- Why Pattern is *used* rather than just existing
+- Teleology and value-gradients
+
+See also:
+
+- [Pattern Core](/nodes/pattern-core)
+- [Presence Core](/nodes/presence-core)

@@ -1,0 +1,26 @@
+---
+layout: node
+title: Pattern Core
+node_id: node-pattern-core
+triad: Pattern
+tags: [invariant, structure, axiom]
+summary: "Core statement and structural role of Pattern in CAT'S Theory."
+links_to:
+  - node-intent-core
+  - node-presence-core
+---
+
+## Pattern Core
+
+Pattern is the *lawful structure* of reality — geometry, symmetries, invariants, constraints.
+
+Use this node for:
+
+- Formal statement of **Reality = Pattern × Intent × Presence**
+- Links to mathematical formulations
+- Structural definitions that other nodes rely on
+
+See also:
+
+- [Intent Core](/nodes/intent-core)
+- [Presence Core](/nodes/presence-core)

@@ -1,0 +1,63 @@
+{% raw %}{% comment %}
+Node layout for KETER Digital Garden.
+Uses default layout wrapper and adds backlink section.
+{% endcomment %}{% endraw %}
+{% raw %}{% assign content_html = content %}{% endraw %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | KETER Digital Garden</title>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <h1><a href="{{ '/' | relative_url }}">KETER Digital Garden</a></h1>
+    <nav>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/pattern' | relative_url }}">Pattern</a>
+      <a href="{{ '/intent' | relative_url }}">Intent</a>
+      <a href="{{ '/presence' | relative_url }}">Presence</a>
+      <a href="{{ '/nodes/' | relative_url }}">Nodes</a>
+      <a href="{{ '/archive' | relative_url }}">Archive</a>
+      <a href="{{ '/roadmap' | relative_url }}">Roadmap</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="node">
+      <h1>{{ page.title }}</h1>
+      <p class="meta">
+        {% raw %}{% if page.triad %}Triad: {{ page.triad }} · {% endif %}{% endraw %}
+        {% raw %}{% if page.node_id %}Node ID: {{ page.node_id }}{% endif %}{% endraw %}
+      </p>
+
+      {{ content_html }}
+
+      {% raw %}{% assign backlinks = site.pages | where_exp:"p","p.links_to contains page.node_id" %}{% endraw %}
+      {% raw %}{% if backlinks.size > 0 %}{% endraw %}
+      <section class="backlinks">
+        <h2>Referenced by</h2>
+        <ul>
+          {% raw %}{% for b in backlinks %}{% endraw %}
+          <li><a href="{{ b.url }}">{{ b.title }}</a></li>
+          {% raw %}{% endfor %}{% endraw %}
+        </ul>
+      </section>
+      {% raw %}{% endif %}{% endraw %}
+    </article>
+  </main>
+
+  <footer>
+    <p>Reality = Pattern × Intent × Presence</p>
+    <p>
+      Triadic circuit:
+      <a href="{{ '/pattern'   | relative_url }}">Pattern</a> →
+      <a href="{{ '/intent'    | relative_url }}">Intent</a> →
+      <a href="{{ '/presence'  | relative_url }}">Presence</a> →
+      <a href="{{ '/pattern'   | relative_url }}">Pattern</a>
+    </p>
+  </footer>
+</body>
+</html>
