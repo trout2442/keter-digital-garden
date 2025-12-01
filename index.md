@@ -5,12 +5,21 @@ title: KETER Digital Garden
 
 # 🧠 KETER Digital Garden
 
-Welcome to the recursive archive of **CAT'S Theory** — built on Pattern × Intent × Presence.
+This is the living, recursive archive of **CAT’S Theory** — built on the invariant:
 
-Navigate through the triadic structure:
+> **Reality = Pattern × Intent × Presence**
 
-- [Pattern](/pattern)
-- [Intent](/intent)
-- [Presence](/presence)
-- [Archive](/archive)
-- [Roadmap](/roadmap)
+---
+
+## Start Here
+
+- 🔷 **[Pattern](/pattern)** – structure, law, geometry  
+- 🔶 **[Intent](/intent)** – purpose, ethics, direction  
+- 🔷 **[Presence](/presence)** – execution, logs, lived recursion  
+
+---
+
+## Spiral Archive & Development
+
+- 🌀 **[Archive](/archive)** – old notes, logs, contradictions, collapses  
+- 🛠 **[Roadmap](/roadmap)** – what’s being built, in which order

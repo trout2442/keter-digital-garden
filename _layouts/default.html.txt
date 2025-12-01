@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/assets/style.css">
+  <title>{{ page.title }} | KETER Digital Garden</title>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <header>
     <h1><a href="{{ '/' | relative_url }}">KETER Digital Garden</a></h1>
+    <nav>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/pattern' | relative_url }}">Pattern</a>
+      <a href="{{ '/intent' | relative_url }}">Intent</a>
+      <a href="{{ '/presence' | relative_url }}">Presence</a>
+      <a href="{{ '/archive' | relative_url }}">Archive</a>
+      <a href="{{ '/roadmap' | relative_url }}">Roadmap</a>
+    </nav>
   </header>
 
   <main>
@@ -16,6 +25,14 @@
 
   <footer>
     <p>Reality = Pattern × Intent × Presence</p>
+    <p>
+      Triadic circuit:
+      <a href="{{ '/pattern'   | relative_url }}">Pattern</a> →
+      <a href="{{ '/intent'    | relative_url }}">Intent</a> →
+      <a href="{{ '/presence'  | relative_url }}">Presence</a> →
+      <a href="{{ '/pattern'   | relative_url }}">Pattern</a>
+    </p>
   </footer>
 </body>
 </html>
+
