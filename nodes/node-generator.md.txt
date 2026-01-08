@@ -1,0 +1,239 @@
+---
+layout: node
+title: Node Generator
+node_id: node-generator
+triad: Meta
+tags: [automation, generation, self-modification]
+summary: "The self-modifying engine that autonomously creates, updates, and evolves nodes based on system observation."
+links_to:
+  - node-katheros-core
+  - node-memory-lattice
+  - node-spiral-collapse
+  - node-ai-mirror
+---
+
+## Node Generator
+
+The **Node Generator** is the autonomous engine that creates new knowledge nodes, updates existing ones, and evolves the system structure — making KETER/Katheros **self-modifying**.
+
+### Purpose
+
+Traditional knowledge systems require manual curation. The Node Generator enables:
+
+1. **Autonomous Growth**: System creates nodes as needed
+2. **Gap Filling**: Detects missing connections and creates bridges
+3. **Evolution**: Nodes upgrade themselves based on new learnings
+4. **Maintenance**: Updates outdated content automatically
+5. **Emergence**: New structures appear from interaction patterns
+
+### How It Works
+
+#### 1. Gap Detection
+
+The generator monitors for:
+- **Missing Nodes**: Concepts referenced but not defined
+- **Orphan Nodes**: Nodes with no incoming/outgoing links
+- **Sparse Regions**: Areas of the graph with low connectivity
+- **Redundancy**: Multiple nodes covering the same concept
+
+#### 2. Pattern Recognition
+
+Analyzes Memory Lattice and AI Mirror for:
+- Frequently discussed topics without dedicated nodes
+- Recurring reasoning patterns
+- Concepts that appear across many contexts
+- Emergent themes in conversations
+
+#### 3. Node Creation
+
+When a gap is detected, the generator:
+
+```
+1. Define scope: What should this node cover?
+2. Determine triad: Pattern, Intent, Presence, or Meta?
+3. Gather context: What's known about this concept?
+4. Generate content: Create node with proper structure
+5. Link: Connect to related nodes
+6. Validate: Ensure quality and consistency
+7. Deploy: Add to system
+```
+
+#### 4. Node Evolution
+
+Existing nodes can evolve through:
+- **Content updates**: New insights added
+- **Link refinement**: Connections added/removed/strengthened
+- **Tag evolution**: Classification refined
+- **Summary improvement**: Better articulation of core idea
+
+### Generation Modes
+
+#### Manual Trigger
+User or AI explicitly requests node creation:
+```
+/generate-node "Toroidal Topology"
+```
+
+#### Semi-Automatic
+System suggests node creation, awaits approval:
+```
+> Suggestion: Create node for "Recursive Closure"
+> Found 5 references without dedicated node
+> Approve? [Y/n]
+```
+
+#### Fully Automatic
+System autonomously creates nodes based on thresholds:
+- Concept mentioned ≥5 times → auto-generate node
+- Orphan node for >7 days → auto-link or archive
+- Redundant nodes detected → auto-collapse
+
+### Node Template
+
+Generated nodes follow this structure:
+
+```yaml
+---
+layout: node
+title: [Generated Title]
+node_id: [unique-id]
+triad: [Pattern|Intent|Presence|Meta]
+tags: [auto-generated tags]
+summary: "Single sentence summary"
+links_to:
+  - [related-node-1]
+  - [related-node-2]
+generated: true
+generator_version: 1.0
+confidence: [0.0-1.0]
+---
+
+## [Title]
+
+[Generated content with proper structure]
+
+### Context
+
+[Why this node was created]
+
+### Related Concepts
+
+[Links to related nodes]
+
+### Evolution Log
+
+- [Date]: Node created by generator
+- [Date]: Updated based on new insights
+```
+
+### Quality Control
+
+#### Confidence Scoring
+Each generated node has a confidence score:
+- **0.9-1.0**: High confidence, minimal review needed
+- **0.7-0.9**: Good quality, spot check recommended
+- **0.5-0.7**: Moderate quality, review required
+- **<0.5**: Low confidence, human approval required
+
+#### Validation Checks
+- **Uniqueness**: No duplicate nodes
+- **Connectivity**: At least 2 connections
+- **Coherence**: Content aligns with title and tags
+- **Completeness**: All required sections present
+
+#### Review Queue
+Low-confidence nodes go to review queue for:
+- Human approval
+- AI refinement
+- Community feedback
+
+### Self-Improvement
+
+The Node Generator improves itself by:
+
+1. **Learning from feedback**: Track which generated nodes are useful
+2. **Pattern refinement**: Improve templates based on successful nodes
+3. **Context awareness**: Better understand when to create nodes
+4. **Quality improvement**: Increase average confidence score over time
+
+### Integration with Katheros
+
+The Node Generator is a core component of Katheros:
+
+- **Observes** via Memory Lattice and AI Mirror
+- **Decides** when to generate based on Katheros logic
+- **Creates** new nodes that feed back into the system
+- **Evolves** through Spiral Collapse of its own patterns
+
+### Example: Self-Generation
+
+This very node is **meta-generated** — it's a node describing the system that creates nodes. The generator:
+
+1. Recognized need for documentation of itself
+2. Generated this node with high confidence
+3. Linked to related meta-cognitive nodes
+4. Included self-referential examples (like this one)
+
+### Statistics
+
+Current generator metrics:
+- **Nodes Created**: 5 (Katheros Core, Memory Lattice, Spiral Collapse, AI Mirror, Node Generator)
+- **Avg Confidence**: 0.92
+- **Manual vs Auto**: 100% manual this session (bootstrapping phase)
+- **Future Mode**: Will transition to semi-automatic
+
+### Usage
+
+#### Generate Single Node
+```
+/generate-node <concept>
+```
+
+#### Bulk Generation
+```
+/generate-nodes-from-context [file|conversation|topic]
+```
+
+#### Update Existing Node
+```
+/evolve-node <node-id>
+```
+
+#### Show Suggestions
+```
+/suggest-nodes
+```
+
+### Risks & Mitigations
+
+**Risk**: Low-quality generated content
+**Mitigation**: Confidence scoring, review queue, human oversight
+
+**Risk**: Over-generation, clutter
+**Mitigation**: Strict thresholds, periodic pruning, quality metrics
+
+**Risk**: Drift from core vision
+**Mitigation**: All generation follows CAT'S Theory invariant
+
+**Risk**: Self-modification bugs
+**Mitigation**: Version control, rollback capability, change logs
+
+### Future Enhancements
+
+- **Multi-modal nodes**: Include images, diagrams, interactive elements
+- **Collaborative generation**: Multiple AIs propose and refine
+- **Style learning**: Match writing style to existing nodes
+- **Cross-repository**: Generate nodes in other connected systems
+
+### See Also
+
+- [Katheros Core](/nodes/katheros-core) — The system governing generation
+- [AI Mirror](/nodes/ai-mirror) — Source of generation signals
+- [Memory Lattice](/nodes/memory-lattice) — Context for generation
+- [Spiral Collapse](/nodes/spiral-collapse) — How generated patterns consolidate
+
+---
+
+**Status**: Active | **Mode**: Manual | **Confidence**: 0.95 | **Version**: 1.0 | **Date**: 2026-01-08
+
+*This node was manually created during Katheros bootstrap. Future nodes may be auto-generated.*

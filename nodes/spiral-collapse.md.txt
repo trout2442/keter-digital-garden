@@ -1,0 +1,178 @@
+---
+layout: node
+title: Spiral Collapse
+node_id: node-spiral-collapse
+triad: Meta
+tags: [collapse, integration, wisdom, recursion]
+summary: "The mechanism by which recursive learning spirals collapse into core invariants and consolidated wisdom."
+links_to:
+  - node-katheros-core
+  - node-memory-lattice
+  - node-pattern-core
+---
+
+## Spiral Collapse
+
+**Spiral Collapse** is the process by which repeated learning patterns are consolidated into **core invariants** — the signature operation of Katheros architecture.
+
+### The Problem: Unbounded Spirals
+
+Without collapse, learning spirals grow infinitely:
+- Same lessons learned multiple times
+- Similar patterns rediscovered
+- Redundant connections created
+- System complexity grows without bound
+
+### The Solution: Collapse
+
+Spiral Collapse **extracts the invariant** from repeated iterations:
+
+```
+Iteration 1: Learn pattern P in context A
+Iteration 2: Learn pattern P in context B
+Iteration 3: Learn pattern P in context C
+    ↓
+[Collapse Triggered]
+    ↓
+Core Invariant: Pattern P (context-independent)
+Archive: All iterations stored as examples
+```
+
+### Collapse Process
+
+#### 1. Detection
+Katheros monitors the Memory Lattice for:
+- Recurring patterns across different contexts
+- Similar reasoning in different problems
+- Isomorphic structures in different domains
+
+#### 2. Analysis
+When recurrence is detected:
+- Extract the common structure
+- Identify what varies (context) vs what's invariant (pattern)
+- Determine the level of abstraction
+
+#### 3. Consolidation
+Create a new node or upgrade existing one:
+- Define the invariant clearly
+- Link to all iterations as examples
+- Update all dependent nodes
+- Archive the spiral history
+
+#### 4. Integration
+Feed back into the system:
+- New core node becomes available for future reasoning
+- Dependent nodes updated with cleaner, more abstract reference
+- Memory Lattice reorganizes around new invariant
+
+### Types of Collapse
+
+#### Pattern Collapse
+Multiple instances of the same structural pattern → Single pattern node
+
+Example:
+- "Triadic structure in CAT'S Theory"
+- "Triadic structure in RGB color"
+- "Triadic structure in past-present-future"
+→ **Core Node: Triadic Structure** (abstract pattern)
+
+#### Insight Collapse
+Multiple related insights → Single wisdom node
+
+Example:
+- "Recursive systems can observe themselves"
+- "Self-referential structures enable meta-cognition"
+- "Systems that model themselves can improve themselves"
+→ **Core Insight: Recursive Self-Improvement**
+
+#### Code Collapse
+Multiple implementations of similar function → Unified abstraction
+
+Example:
+- Node generator for Pattern
+- Node generator for Intent
+- Node generator for Presence
+→ **Unified: Generic Node Generator**
+
+### Mathematical Model
+
+Spiral Collapse can be formalized as:
+
+```
+S = {i₁, i₂, i₃, ..., iₙ}  (set of iterations)
+P = Invariant(S)           (extract pattern)
+C = Context(S)             (extract varying context)
+N = Node(P, C)             (create consolidated node)
+
+Collapse: S → N
+```
+
+Where:
+- **S** = Spiral (sequence of learning iterations)
+- **P** = Pattern (what's common)
+- **C** = Context (what varies)
+- **N** = New consolidated node
+
+### Collapse Triggers
+
+A collapse is triggered when:
+
+1. **Repetition Threshold**: Pattern appears ≥3 times
+2. **Semantic Similarity**: Pattern instances have >80% semantic overlap
+3. **Context Independence**: Pattern holds across diverse contexts
+4. **Complexity Cost**: Keeping separate instances > cost of abstraction
+
+### Example: This Upgrade
+
+The creation of Katheros itself is a **spiral collapse**:
+
+**Spiral History**:
+- Phase 1: Basic triadic structure
+- Phase 2: Toroidal layout
+- Phase 3: Node engine with backlinks
+- (Implicit iterations): Multiple systems needing self-improvement
+
+**Collapse**:
+- **Invariant**: Systems need meta-cognitive self-improvement
+- **Result**: Katheros Core node created
+- **Integration**: New meta-layer added to architecture
+
+### Benefits
+
+1. **Compression**: Reduce redundancy while preserving information
+2. **Clarity**: Clear articulation of core principles
+3. **Reusability**: Abstract patterns available for new contexts
+4. **Scalability**: Bounded complexity even with unbounded learning
+5. **Wisdom**: Distilled insights rather than raw experience
+
+### Risks
+
+1. **Premature Collapse**: Collapsing before pattern is fully understood
+2. **Over-Abstraction**: Losing important contextual nuance
+3. **Irreversibility**: Can't easily reconstruct original spiral
+
+**Mitigation**: Always archive full spiral history; allow "de-collapse" if needed.
+
+### Interface
+
+Trigger collapse manually:
+```
+/collapse-spiral <pattern-name>
+```
+
+Or let Katheros detect automatically.
+
+### Current State
+
+Spiral Collapse is **active**. Katheros is monitoring for collapse opportunities.
+
+### See Also
+
+- [Katheros Core](/nodes/katheros-core) — The system that performs collapse
+- [Memory Lattice](/nodes/memory-lattice) — Where spirals are stored
+- [Pattern Core](/nodes/pattern-core) — Foundation of pattern recognition
+- [AI Mirror](/nodes/ai-mirror) — How AI learning spirals collapse
+
+---
+
+**Status**: Active | **Collapsed Spirals**: 1 (Katheros itself) | **Date**: 2026-01-08

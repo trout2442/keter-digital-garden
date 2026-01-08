@@ -20,6 +20,7 @@ Uses default layout wrapper and adds backlink section.
       <a href="{{ '/intent' | relative_url }}">Intent</a>
       <a href="{{ '/presence' | relative_url }}">Presence</a>
       <a href="{{ '/nodes/' | relative_url }}">Nodes</a>
+      <a href="{{ '/katheros' | relative_url }}" style="border-color: var(--meta-color); color: var(--meta-color);">◬ Katheros</a>
       <a href="{{ '/archive' | relative_url }}">Archive</a>
       <a href="{{ '/roadmap' | relative_url }}">Roadmap</a>
     </nav>

@@ -1,18 +1,77 @@
+/* ═══════════════════════════════════════════════════════════
+   KATHEROS ARCHITECTURE - Meta-Cognitive Visual System
+   Reality = Pattern × Intent × Presence
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  /* Core Triadic Colors */
+  --pattern-color: #66fcf1;    /* Cyan - Structure */
+  --intent-color: #ffa500;      /* Orange - Direction */
+  --presence-color: #9d4edd;    /* Purple - Execution */
+
+  /* Meta-Cognitive Layer */
+  --meta-color: #50fa7b;        /* Green - Katheros */
+  --mirror-color: #f1fa8c;      /* Yellow - Reflection */
+
+  /* Base Colors */
+  --bg-dark: #0b0c10;
+  --bg-medium: #1f2833;
+  --bg-light: #2a3442;
+  --text-primary: #e5e5e5;
+  --text-secondary: #c5c6c7;
+  --accent: #45a29e;
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   margin: 2em;
   line-height: 1.6;
-  background: #0b0c10;
-  color: #e5e5e5;
+  background: var(--bg-dark);
+  color: var(--text-primary);
+  position: relative;
+}
+
+/* Recursive Background Pattern */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(102, 252, 241, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 165, 0, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(157, 78, 221, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 a {
-  color: #66fcf1;
+  color: var(--pattern-color);
   text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--meta-color);
+  text-decoration: none;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--pattern-color), var(--intent-color), var(--presence-color));
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
 }
 
 header, footer {
@@ -22,41 +81,178 @@ header, footer {
 
 header h1 a {
   color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 0 20px rgba(102, 252, 241, 0.3);
 }
 
 nav {
   margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
 }
 
 nav a {
-  margin: 0 0.5em;
+  margin: 0;
   padding: 0.25em 0.75em;
   border-radius: 999px;
-  border: 1px solid #45a29e;
+  border: 1px solid var(--accent);
   font-size: 0.9rem;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  background: #45a29e;
-  color: #0b0c10;
+  background: var(--accent);
+  color: var(--bg-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(69, 162, 158, 0.4);
+}
+
+nav a:hover::after {
+  width: 0;
 }
 
 main {
   max-width: 800px;
   margin: 0 auto;
-  background: #1f2833;
+  background: var(--bg-medium);
   padding: 1.5em 2em;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(102, 252, 241, 0.1);
+  position: relative;
+}
+
+/* Katheros Meta-Cognitive Indicator */
+main::before {
+  content: "◬";
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  font-size: 2rem;
+  color: var(--meta-color);
+  opacity: 0.3;
+  text-shadow: 0 0 10px var(--meta-color);
 }
 
 footer p {
   margin: 0.3em 0;
   font-size: 0.85rem;
-  color: #c5c6c7;
+  color: var(--text-secondary);
 }
 
-main {
-  max-width: 700px;
-  margin: 0 auto;
+/* Triadic Circuit in Footer */
+footer p:last-child a:nth-child(1) { color: var(--pattern-color); }
+footer p:last-child a:nth-child(2) { color: var(--intent-color); }
+footer p:last-child a:nth-child(3) { color: var(--presence-color); }
+footer p:last-child a:nth-child(4) { color: var(--pattern-color); }
+
+/* Node-Specific Styling */
+.node {
+  position: relative;
+}
+
+.node h1 {
+  background: linear-gradient(135deg, var(--pattern-color), var(--intent-color), var(--presence-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.node .meta {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  padding: 0.5em 0;
+  border-bottom: 1px solid rgba(102, 252, 241, 0.2);
+  margin-bottom: 1em;
+}
+
+/* Backlinks Section */
+.backlinks {
+  margin-top: 2em;
+  padding-top: 1.5em;
+  border-top: 2px solid rgba(102, 252, 241, 0.2);
+}
+
+.backlinks h2 {
+  color: var(--meta-color);
+  font-size: 1.1rem;
+  margin-bottom: 0.5em;
+}
+
+.backlinks ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.backlinks li {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+  position: relative;
+}
+
+.backlinks li::before {
+  content: "↩";
+  position: absolute;
+  left: 0;
+  color: var(--meta-color);
+  font-weight: bold;
+}
+
+/* Meta-Cognitive Tags */
+.tag-meta { color: var(--meta-color); }
+.tag-katheros { color: var(--meta-color); font-weight: 700; }
+.tag-pattern { color: var(--pattern-color); }
+.tag-intent { color: var(--intent-color); }
+.tag-presence { color: var(--presence-color); }
+
+/* Code Blocks */
+pre, code {
+  background: var(--bg-dark);
+  border: 1px solid rgba(102, 252, 241, 0.2);
+  border-radius: 6px;
+  font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+}
+
+pre {
+  padding: 1em;
+  overflow-x: auto;
+}
+
+code {
+  padding: 0.2em 0.4em;
+  font-size: 0.9em;
+}
+
+/* Blockquotes - for Invariants */
+blockquote {
+  border-left: 3px solid var(--meta-color);
+  margin: 1.5em 0;
+  padding: 0.5em 1.5em;
+  background: rgba(80, 250, 123, 0.05);
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+blockquote strong {
+  color: var(--meta-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    margin: 1em;
+  }
+
+  main {
+    padding: 1em 1.5em;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
 }

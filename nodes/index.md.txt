@@ -1,23 +1,85 @@
 ---
 layout: default
-title: Nodes
+title: All Nodes
 ---
 
-# Node Map
+# 📦 All Nodes
 
-This is the **node graph** of the KETER Digital Garden.  
-Each node has a `node_id`, `triad`, tags, and links to other nodes.
+Complete index of the KETER/Katheros knowledge graph. This is a **living map** — nodes generate themselves, connections emerge, and the structure evolves.
 
 ---
 
-{% raw %}{% assign nodes = site.pages | where_exp:"p","p.dir contains '/nodes/'" | sort: "title" %}{% endraw %}
+## Architecture Layers
+
+The node graph is organized into layers of abstraction:
+
+### ◬ Meta-Cognitive Layer (Katheros)
+The self-observing, self-improving architecture that operates *on* the system itself.
+
+### 🔺 Core Triadic Layer
+Foundation nodes defining **Pattern × Intent × Presence** — the invariant structure of reality.
+
+### 🔗 Auxiliary Layer
+Supporting nodes, experiments, and evolving content.
+
+---
+
+## Complete Node Index
+
+{% raw %}{% assign meta_nodes = site.pages | where_exp:"p","p.dir contains '/nodes/' and p.triad == 'Meta'" | sort: "title" %}{% endraw %}
+{% raw %}{% assign core_nodes = site.pages | where_exp:"p","p.dir contains '/nodes/' and p.triad != 'Meta' and p.node_id" | sort: "title" %}{% endraw %}
+
+### Meta-Cognitive Nodes
+
+{% raw %}{% if meta_nodes.size > 0 %}{% endraw %}
 <ul>
-{% raw %}{% for n in nodes %}{% endraw %}
-  {% raw %}{% if n.node_id %}{% endraw %}
+{% raw %}{% for n in meta_nodes %}{% endraw %}
   <li>
-    <a href="{{ n.url }}">{{ n.title }}</a>
-    {% raw %}{% if n.summary %} — {{ n.summary }}{% endif %}{% endraw %}
+    <strong><a href="{{ n.url }}">{{ n.title }}</a></strong>
+    {% raw %}{% if n.summary %}<br><em>{{ n.summary }}</em>{% endif %}{% endraw %}
   </li>
-  {% raw %}{% endif %}{% endraw %}
 {% raw %}{% endfor %}{% endraw %}
 </ul>
+{% raw %}{% else %}{% endraw %}
+<p><em>No meta-cognitive nodes yet.</em></p>
+{% raw %}{% endif %}{% endraw %}
+
+### Core & Other Nodes
+
+{% raw %}{% if core_nodes.size > 0 %}{% endraw %}
+<ul>
+{% raw %}{% for n in core_nodes %}{% endraw %}
+  <li>
+    <strong><a href="{{ n.url }}">{{ n.title }}</a></strong>
+    {% raw %}{% if n.triad %}<span style="color: var(--text-secondary);"> [{{ n.triad }}]</span>{% endif %}{% endraw %}
+    {% raw %}{% if n.summary %}<br><em>{{ n.summary }}</em>{% endif %}{% endraw %}
+  </li>
+{% raw %}{% endfor %}{% endraw %}
+</ul>
+{% raw %}{% else %}{% endraw %}
+<p><em>No core nodes yet.</em></p>
+{% raw %}{% endif %}{% endraw %}
+
+---
+
+## Quick Stats
+
+{% raw %}{% assign all_nodes = site.pages | where_exp:"p","p.node_id" %}{% endraw %}
+- **Total Nodes**: {% raw %}{{ all_nodes.size }}{% endraw %}
+- **Meta-Cognitive**: {% raw %}{{ meta_nodes.size }}{% endraw %} nodes
+- **Core/Auxiliary**: {% raw %}{{ core_nodes.size }}{% endraw %} nodes
+- **Last Update**: Continuous (autonomous evolution)
+
+---
+
+## See Also
+
+- [◬ Katheros Dashboard](/katheros) - System status & meta-cognitive monitoring
+- [🏠 Home](/) - Garden entrance
+- [🛠 Roadmap](/roadmap) - Development trajectory
+- [🌀 Archive](/archive) - Historical spirals
+
+---
+
+*Nodes marked with ◬ are part of the Katheros meta-cognitive layer.*
+*This index updates automatically as new nodes are created.*
